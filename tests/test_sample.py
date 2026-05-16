@@ -3,7 +3,8 @@ import pandas as pd
 import os
 
 # Path to your cleaned data
-DATA_PATH = "../data/raw/bank_reviews.csv"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_PATH = os.path.join(BASE_DIR, "data", "raw", "bank_reviews.csv")
 
 @pytest.fixture
 def loaded_data():
@@ -11,7 +12,6 @@ def loaded_data():
     if not os.path.exists(DATA_PATH):
         pytest.fail(f"Cleaned data file not found at {DATA_PATH}. Run the scraping script first.")
     return pd.read_csv(DATA_PATH)
-
 def test_required_columns_exist(loaded_data):
     """Check if all required columns are present in the final dataset."""
     expected_columns = ['review', 'rating', 'date', 'bank', 'source']
