@@ -20,7 +20,4 @@ venv/
 # pytest
 .pytest_cache/
 
-# Data
-data/raw/
-data/
-*.csv
+
