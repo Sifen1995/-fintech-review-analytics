@@ -1,0 +1,26 @@
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.venv/
+env/
+venv/
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# pytest
+.pytest_cache/
+
+# Data
+data/raw/
+data/
+*.csv
