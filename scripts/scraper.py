@@ -17,7 +17,7 @@ for app in apps:
         lang='en', # Language of reviews
         country='us', # Target region
         sort=Sort.NEWEST, # Get latest feedback
-        count=600 # Slightly more than 400 to ensure enough after cleaning
+        count=900 # Slightly more than 400 to ensure enough after cleaning
     )
     
     # Add bank name to each review dictionary
