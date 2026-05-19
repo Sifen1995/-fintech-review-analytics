@@ -3,3 +3,8 @@ numpy>=1.21.0
 pytest>=6.2.0
 google-play-scraper
 notebook
+nltk
+scikit-learn
+transformers 
+torch 
+spacy 
