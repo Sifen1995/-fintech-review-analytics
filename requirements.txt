@@ -8,7 +8,8 @@ scikit-learn
 transformers 
 torch 
 spacy 
-
+matplotlib
+seaborn
 
 sqlalchemy
 psycopg2-binary
